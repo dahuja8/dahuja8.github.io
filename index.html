@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhruv Ahuja</title>
+  <meta name="description" content="Dhruv Ahuja is an M.S. robotics student at Georgia Tech working on active perception, 3D reconstruction, and planning under uncertainty. Applying to PhD programs for Fall 2027.">
+  <meta property="og:title" content="Dhruv Ahuja">
+  <meta property="og:description" content="M.S. robotics student at Georgia Tech working on active perception, 3D reconstruction, and planning under uncertainty.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231558b0'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EDA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Dhruv Ahuja", "url": "https://dahuja8.github.io/",
+   "email": "mailto:dahuja8@gatech.edu", "affiliation": {"@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology"},
+   "knowsAbout": ["Active perception", "3D reconstruction", "3D Gaussian Splatting", "Uncertainty quantification", "World models", "Stochastic optimal control", "Motion planning"],
+   "sameAs": ["https://scholar.google.com/citations?user=Sssm09QAAAAJ", "https://www.linkedin.com/in/dhruvahuja8/"]}
+  </script>
+  <style>
+    :root {
+      --text: #1f2328;
+      --muted: #59636e;
+      --faint: #8c959f;
+      --line: #e4e7eb;
+      --link: #1558b0;
+      --highlight: #fdf7e3;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 2px; }
+    strong { font-weight: 700; }
+
+    .page { max-width: 880px; margin: 0 auto; padding: 56px 24px 40px; }
+
+    /* ---------- intro ---------- */
+    .intro { display: grid; grid-template-columns: 1fr 210px; gap: 44px; align-items: start; }
+    h1 { font-size: 40px; line-height: 1.15; font-weight: 600; margin: 0 0 16px; letter-spacing: -0.01em; }
+    .intro p { margin: 0 0 14px; }
+    .callout {
+      border-left: 3px solid #e0a820;
+      background: var(--highlight);
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+    }
+    .links { margin-top: 18px !important; font-size: 17px; }
+    .links a { font-weight: 600; }
+    .links .sep { color: var(--faint); margin: 0 8px; }
+
+    .avatar {
+      position: relative; width: 210px; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+      display: grid; place-items: center; margin-top: 8px;
+      background: linear-gradient(145deg, #e8eef8, #cfdcf0);
+      color: #5b7bb0; font-size: 64px; font-weight: 600; letter-spacing: 0.02em;
+    }
+    .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ---------- sections ---------- */
+    section { margin-top: 48px; }
+    h2 { font-size: 24px; font-weight: 600; margin: 0 0 14px; }
+    .section-note { color: var(--muted); margin: -6px 0 18px; }
+
+    .interests { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .interests li { border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; font-size: 15px; color: #33404d; }
+
+    /* ---------- publications ---------- */
+    .pub { display: grid; grid-template-columns: 210px 1fr; gap: 26px; padding: 18px; margin: 0 -18px; border-radius: 10px; }
+    .pub + .pub { margin-top: 6px; }
+    .thumb img {
+      display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+      border: 1px solid var(--line); border-radius: 6px; background: #fff;
+    }
+    .pub-title { display: inline-block; font-size: 18px; font-weight: 700; line-height: 1.35; margin-bottom: 4px; }
+    .authors { color: #33404d; }
+    .venue { margin-top: 2px; }
+    .venue em { font-weight: 600; }
+    .pub-links { margin-top: 4px; }
+    .pub-links .sep { color: var(--faint); margin: 0 6px; }
+
+    footer { margin-top: 64px; color: var(--faint); font-size: 14px; text-align: center; }
+
+    @media (max-width: 720px) {
+      .page { padding-top: 36px; }
+      .intro { grid-template-columns: 1fr; gap: 20px; }
+      .avatar { order: -1; width: 150px; margin: 0; font-size: 46px; }
+      h1 { font-size: 34px; }
+      .pub { grid-template-columns: 1fr; gap: 14px; }
+      .thumb { max-width: 360px; }
+    }
+  </style>
+</head>
+<body>
+<main class="page">
+
+  <header class="intro">
+    <div>
+      <h1>Dhruv Ahuja</h1>
+      <p>
+        I'm an M.S. student in Electrical and Computer Engineering (Robotics) at
+        <a href="https://www.gatech.edu/">Georgia Tech</a>, where I also received my B.S. in Electrical Engineering. I'm advised by <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>
+        and <a href="https://ae.gatech.edu/directory/person/panagiotis-tsiotras">Prof. Panagiotis Tsiotras</a>.
+      </p>
+      <p>
+        My research focuses on how robots perceive, model, and navigate unfamiliar environments under uncertainty.
+        I am interested in world models that capture real-world dynamics and enable robust decision-making.
+      </p>
+      <p class="callout">
+        <strong>I'm applying to PhD programs for Fall 2027</strong>, and I'm also open to research engineering roles.
+      </p>
+      <p class="links">
+        <a href="mailto:dahuja8@gatech.edu">Email</a><span class="sep">/</span>
+        <a href="assets/cv.pdf">CV</a><span class="sep">/</span>
+        <a href="https://scholar.google.com/citations?user=Sssm09QAAAAJ">Google Scholar</a><span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/dhruvahuja8/">LinkedIn</a>
+      </p>
+    </div>
+    <div class="avatar">
+      <span aria-hidden="true">DA</span>
+      <img src="assets/img/profile.jpg" alt="Photo of Dhruv Ahuja" onerror="this.remove()">
+    </div>
+  </header>
+
+  <section id="interests">
+    <h2>Research interests</h2>
+    <ul class="interests">
+      <li>World models</li>
+      <li>Active perception</li>
+      <li>Uncertainty quantification</li>
+      <li>3D reconstruction</li>
+      <li>Stochastic optimal control</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="section-note">* denotes equal contribution</p>
+
+    <article class="pub" id="gavis">
+      <a class="thumb" href="https://gatech-rl2.github.io/GAVIS/"><img src="assets/img/pubs/gavis.jpg" alt="GAVIS: regions visible and invisible to the training views, with the resulting uncertainty map"></a>
+      <div>
+        <a class="pub-title" href="https://gatech-rl2.github.io/GAVIS/">Uncertainty-driven 3D Gaussian Splatting Active Mapping via Anisotropic Visibility Field</a>
+        <div class="authors">Shangjie Xue*, Jesse Dill*, <strong>Dhruv Ahuja*</strong>, Frank Dellaert, Panagiotis Tsiotras, Danfei Xu</div>
+        <div class="venue"><em>CVPR</em>, 2026</div>
+        <div class="pub-links">
+          <a href="https://gatech-rl2.github.io/GAVIS/">project page</a><span class="sep">/</span>
+          <a href="https://arxiv.org/abs/2605.30342">arXiv</a><span class="sep">/</span>
+          <a href="https://github.com/xsj01/gavis">code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub" id="gabi">
+      <a class="thumb" href="https://arxiv.org/abs/2606.00886"><img src="assets/img/pubs/gabi.jpg" alt="GABI: spacecraft image, distance field, and segmentation outputs"></a>
+      <div>
+        <a class="pub-title" href="https://arxiv.org/abs/2606.00886">GABI: Geometry-Aware Boundary Integration for Spacecraft Segmentation</a>
+        <div class="authors">Iason Georgios Velentzas, <strong>Dhruv Ahuja</strong>, Panagiotis Tsiotras</div>
+        <div class="venue"><em>CVPR Workshops (AI4Space)</em>, 2026</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2606.00886">arXiv</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub" id="safe-gap">
+      <a class="thumb" href="https://arxiv.org/abs/2509.07239"><img src="assets/img/pubs/safe-gap.jpg" alt="Dynamic gap planner visualization: ego-robot, dynamic agents, and propagated gaps"></a>
+      <div>
+        <a class="pub-title" href="https://arxiv.org/abs/2509.07239">Safe Gap-Based Planning in Dynamic Settings</a>
+        <div class="authors">Max Asselmeier, Abdel Zaro, <strong>Dhruv Ahuja</strong>, Ye Zhao, Patricio A. Vela</div>
+        <div class="venue"><em>Algorithms for Machine Vision in Navigation and Control</em>, Springer, 2026 (book chapter)</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2509.07239">arXiv</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub" id="dynamic-gap">
+      <a class="thumb" href="https://arxiv.org/abs/2210.05022"><img src="assets/img/pubs/dynamic-gap.jpg" alt="Dynamic Gap: gaps and trajectories around an ego-robot among moving agents"></a>
+      <div>
+        <a class="pub-title" href="https://arxiv.org/abs/2210.05022">Dynamic Gap: Safe Gap-based Navigation in Dynamic Environments</a>
+        <div class="authors">Max Asselmeier, <strong>Dhruv Ahuja</strong>, Abdel Zaro, Ahmad Abuaish, Ye Zhao, Patricio A. Vela</div>
+        <div class="venue"><em>ICRA</em>, 2025</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2210.05022">arXiv</a><span class="sep">/</span>
+          <a href="https://github.com/ivaROS/DynamicGap">code</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>Last updated September 2026</footer>
+</main>
+
+</body>
+</html>
